@@ -1,0 +1,25 @@
+{
+  "name": "trading_bot",
+  "version": "1.0.0",
+  "description": "A trading bot app",
+  "main": "index.js",
+  "scripts": {
+    "prod": "NODE_ENV=production NODE_PATH=src node src/index.js",
+    "start": "NODE_PATH=src node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_PATH=src nodemon"
+  },
+  "keywords": [
+    "trading",
+    "bot",
+    "project",
+    "app"
+  ],
+  "author": "Catalin Bora",
+  "license": "ISC",
+  "dependencies": {
+    "ccxt": "^1.34.64",
+    "coinbase": "^2.0.8",
+    "mongoose": "^5.10.7"
+  }
+}
