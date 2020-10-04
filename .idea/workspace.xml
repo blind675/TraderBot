@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0401706e-1807-45ac-a6e6-edf5d9e0a933" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/crypto_trading/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/price.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crypto_api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto_api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crypto_trading/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto_trading/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/price.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,7 @@
       <workItem from="1601450754362" duration="83000" />
       <workItem from="1601455757685" duration="163000" />
       <workItem from="1601628375528" duration="3074000" />
-      <workItem from="1601668284503" duration="4733000" />
+      <workItem from="1601668284503" duration="9522000" />
     </task>
     <servers />
   </component>

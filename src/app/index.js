@@ -34,8 +34,16 @@ module.exports = {
 
         await database.connect();
 
-        mainLoop();
-        setInterval(mainLoop, TIME_INTERVAL);
+        // const startDate = moment().subtract(2, 'days').toDate();
+        // const endDate = moment().subtract(1, 'days').toDate();
+        //
+        // await Trading.getBollinger({start: startDate, end: endDate});
+
+        const startDate = moment().subtract(1, 'days').toDate();
+        await Trading.getBollinger({start: startDate});
+
+        // mainLoop();
+        // setInterval(mainLoop, TIME_INTERVAL);
 
     }
 }

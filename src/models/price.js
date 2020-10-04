@@ -33,7 +33,7 @@ const PriceSchema = new Schema({
 });
 
 PriceSchema.statics.getPrices = async function({start, end = Date()} = {}) {
-    return await Price.find({time: {$gt: start, $lte: end}});
+    return await Price.find({time: {$gte: start, $lte: end}});
 };
 
 PriceSchema.statics.getAverage = async function({start, end = Date()} = {}) {
@@ -65,6 +65,12 @@ PriceSchema.statics.getMin = async function({start, end = Date()} = {}) {
 
     const prices = await Price.getPrices({start, end});
     return prices.reduce((min, price) => Math.min(min, price.spot), Number.MAX_SAFE_INTEGER);
+}
+
+PriceSchema.statics.getRange = async function({start, end = Date()} = {}) {
+
+    const prices = await Price.getPrices({start, end});
+    return prices.map(price => price.spot);
 }
 
 const Price = mongoose.model('Price', PriceSchema);
